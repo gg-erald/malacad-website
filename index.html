@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CatchUP Protocol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CatchUP Protocol | A Student Learning Recovery Service</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <div>
+
+    <header>
+        <div class="site-header">
             <a href ="#home" class="logo">CatchUp Protocol</a>
-            <nav class="site-nav">
-                <ul class="nav-list">
+            <nav>
+                <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#how-it-works">How It Works</a></li>
@@ -27,20 +29,257 @@
         </div>
     </header>
 
-<main>
-    <section id="home" class="hero">
-        <div class="container hero-grid">
-            <div>
-                <p class="status">status: behind schedule</p>
-                <h1>Fall behind. Regroup. Move forward</h1>
-                <p class="lead">CatchUp Protocol helps junior high school, senior high school, and college students who have missed lessons or accumulated unfinished school requirements.</p>
-                <div class="btn-row">
-                    <a href="#how-it-works" class="btn btn-primary">How It Works</a>
-                    <a href="#sample-plan" class="btn btn-ghost">View a Sample Plan</a>
+    <main>
+        <!--HOME-->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="status">status: behind schedule</p>
+                    <h1>Fall behind. Regroup. <span class="highlight">Move forward.</span></h1>
+                    <p class="lead">CatchUp Protocol helps junior high, senior high, and college students and independent learners turn a pile of missed lessons and unfinished tasks into a plan they can actually follow.</p>
+                    <a href="#contact" class="button">Contact us</a>
+                    <a href="#how-it-works" class="button button-outline">See how it works</a>
+                </div>  
+                <div class="box hero-box">
+                    <p class="small-label">backlog.txt</p>
+                    <ul>
+                        <li><span class="red">overdue</span>Lab Report</li>
+                        <li><span class="yellow">due this week</span></li>
+                        <li><span class="yellow">due this week</span></li>
+                        <li><span class="blue">due next week</span></li>
+                    </ul>
+                    <p>Four things, one plan. Start with the first line.</p>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+
+        <!--SERVICES-->
+        <section id="services">
+            <div class="container">
+                <h2>Services</h2>
+                <p>Support for students who are behind in their studies and need help catching up.</p>
+                <div class ="cards">
+                    <div class="box">
+                        <img src="images/planning.svg" alt="" class="icon">
+                        <h3>Catch-Up Planning</h3>
+                        <p>A personalized plan that lists what you missed, what is due and what to do first.</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/prioritization.svg" alt="" class="icon">
+                        <h3>Task prioritization</h3>
+                        <p>Sort unfinished requirements by deadline and weight so urgent work does not get burried.</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/scheduling.svg" alt="" class="icon">
+                        <h3>Study scheduling</h3>
+                        <p>Break big tasks into short sessions that fit the time you really have each day.</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/review.svg" alt="" class="icon">
+                        <h3>Missed lesson review</h3>
+                        <p>Guides and links that help you revisit topics you skipped, one topic at a time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--HOW IT WORKS-->
+        <section id="how-it-works" class="dark-section">
+            <div class="container">
+                <h2>How It Works</h2>
+                <p>Four steps, repeated until you are caught up.</p>
+                <div class="cards">
+                    <div class="box">
+                        <p class="number">1</p>
+                        <h3>Identify</h3>
+                        <p>List every missed lesson and unfinished task. Nothing is too small to write down.</p>
+                    </div>
+                    <div class="box">
+                        <p class="number">2</p>
+                        <h3>Prioritize</h3>
+                        <p>Rank items by deadline and importance. Do the urgent ones first.</p>
+                    </div>
+                    <div class="box">
+                        <p class="number">3</p>
+                        <h3>Recover</h3>
+                        <p>Follow a realistic schedule of short study blocks and check items off.</p>
+                    </div>
+                    <div class="box">
+                        <p class="number">4</p>
+                        <h3>Adjust</h3>
+                        <p>Review your progress at the end of the week and change the plan if needed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SAMPLE PLAN-->
+        <section id="sample-plan">
+            <div class="container">
+                <h2>Sample Plan</h2>
+                <p>An example week for a student with three late tasks and one missed chapter. Plan for real students are written to fit their own deadlines.</p>
+                <div class="table-box">
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>Task</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Finish Science Lab Report</td>
+                            <td>60 min</td>
+                            <td><span class="red">urgent</span></td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Review missed chapter 3, notes only</td>
+                            <td>45 min</td>
+                            <td><span class="yellow">in progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Math worksheet 4, first half</td>
+                            <td>40 min</td>
+                            <td><span class="yellow">in progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Math worksheet 4, second half</td>
+                            <td>40 min</td>
+                            <td><span class="blue">planned</span></td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Ultra Project</td>
+                            <td>240 min</td>
+                            <td><span class="blue">planned</span></td>
+                        </tr>
+                        <tr>
+                            <td>Weekend</td>
+                            <td>History essay outline, then weekly review</td>
+                            <td>60 min</td>
+                            <td><span class="blue">planned</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!--RESOURCES-->
+        <section id="resources" class="dark-section">
+            <div class="container">
+                <h2>Resource library</h2>
+                <p>Selected tools and study materials. These links open external sites</p>
+                <div class="cards">
+                    <div class="box">
+                        <h3>Review materials</h3>
+                        <ul>
+                            <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a>:Free lessons in math, science, and more.</li>
+                            <li><a href="https://www.ck12.org/" target="_blank">CK-12</a>:Free textbooks and practice problems</li>
+                            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a>:Online programming tutorials</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>Planning Tools</h3>
+                        <ul>
+                            <li><a href="https://mystudylife.com/" target="_blank">MyStudyLife</a>: student planner for classes and tasks</li>
+                            <li><a href="https://www.todoist.com/" target="_blank">Todoist</a>: simple task lists with due dates</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>Study and writing guides</h3>
+                        <ul>
+                            <li><a href="https://owl.purdue.edu/" target="_blank">Purdue OWL</a>: writing and citation help</li>
+                            <li><a href="https://www.coursera.org/learn/learning-how-to-learn" target="_blank">Learning How to Learn</a>: a course on study techniques</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <!--STUDY TIPS-->
+        <section id="study-tips">
+            <div class="container">
+                <h2>Study Tips</h2>
+                <div class="cards">
+                    <div class="box">
+                        <h3>Weekly catchup checklist</h3>
+                        <ul>
+                            <li>List all unfinished tasks and missed lessons</li>
+                            <li>Write the deadline next to each item</li>
+                            <li>Pick the top three for this week</li>
+                            <li>Schedule each one in a specific time</li>
+                            <li>Review progress at the end of the weekend</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>Tips for staying on track</h3>
+                        <ul>
+                            <li>Study in blocks of 25 to 45 minutes with short breaks</li>
+                            <li>Start with the smallest step if you feel stuck</li>
+                            <li>Plan fewer tasks than you think you can do</li>
+                            <li>Ask your teacher about extensions early, not at the deadline</li>
+                            <li>Turn off notifications while studying</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--ABOUT-->
+        <section id="about" class="dark-section">
+            <div class="container small-small container">
+                <h2>About CatchUp Protocol</h2>
+                <p>CatchUp Protocol is a proposed learning recovery service for students who are falling behind or struggling with piled-up requirements.
+                    It supports learners at different educational levels, as well as independent learners who want to organize their own study.</p>
+                <p>Research on procrastination and self-regulated learning points to the value of good planning. Many tools help you list tasks. 
+                    CatchUp Protocol focuses on the harder part: deciding what to do first after you have already fallen behind.</p>
+                <p>It encourages realistic plans, steady effort, and manageable tasks.
+                    It does not promise instant grade improvement and does not replace teachers or classroom instruction.</p>
+            </div>
+        </section>
+
+        <!--FAQ-->
+        <section id="faq">
+            <div class="container small-container">
+                <h2>Frequently Asked Questions</h2>
+                <details class="box">
+                    <summary>Who is CatchUP Protocol for?</summary>
+                    <p>Junior high,  senior high, and college students, plus independent learners who want help organizing their study.</p>
+                </details>
+                <details class="box">
+                    <summary>Will my grades improve right away?</summary>
+                    <p>No. The service helps you plan and stay consistent, but results depend on your effor over time.</p>
+                </details>
+                <details class="box">
+                    <summary>Does the website make a schedule for me automatically?</summary>
+                    <p>Not in this first version. Plans are written manually, and the site does not save your progress or require an account.</p>
+                </details>
+                <details class="box">
+                    <summary>Does it cost anything?</summary>
+                    <p>The site does not include online payments. Sample plans and resource links are free to view.</p>
+                </details>
+            </div>
+        </section>
+
+        <!--CONTACT-->
+        <section id="contact" class="dark-section">
+            <div class="container small-container">
+                <h2>Contact</h2>
+                 <p>Want a catch-up plan? Send an email with your grade level, the subjects you are behind in, and your nearest deadlines.</p>
+                <div class="box">
+                    <p><strong>Email:</strong> <a href="mailto:hello@catchupprotocol.example">hello@catchupprotocol.example</a></p>
+                    <p><strong>Reply time:</strong> within 2 school days (sample details)</p>
+                    <a href="mailto:hello@catchupprotocol.example" class="button">Email us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <foooter>
+        <p>CatchUp Protocol: Fall behind. Move forward</p>
+        <p class="small-text">Website proposal and landing page by Gerald Malacad, 2026.</p>
+    </foooter>
 </body>
 </html> 
